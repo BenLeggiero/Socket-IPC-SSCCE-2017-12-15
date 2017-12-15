@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Background Server/Background Server.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Foreground App/Foreground App.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:Socket IPC SSCCE 2017-12-15.xcodeproj">
+   </FileRef>
+</Workspace>
