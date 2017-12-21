@@ -25,7 +25,7 @@ public class SscceClient: ClientProtocol {
         guard let socket = CFSocket.create(protocolFamily: PF_INET,
                                            socketType: SOCK_STREAM,
                                            protocol: IPPROTO_TCP,
-                                           callBackTypes: [.acceptCallBack, .writeCallBack],
+                                           callBackTypes: [.acceptCallBack, .dataCallBack],
                                            callout: basicCallout,
                                            context: &context)
             else {
@@ -139,7 +139,7 @@ public class SscceServer: ServerProtocol {
         cfSocket = CFSocket.create(protocolFamily: PF_INET,
                                    socketType: SOCK_STREAM,
                                    protocol: IPPROTO_TCP,
-                                   callBackTypes: [.acceptCallBack],
+                                   callBackTypes: [.acceptCallBack, .dataCallBack],
                                    callout: basicCallout,
                                    context: &context)
         
